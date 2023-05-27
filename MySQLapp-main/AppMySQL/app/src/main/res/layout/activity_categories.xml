@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity"
+    android:background="@drawable/gb__"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A2000406"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#D1060001"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:id="@+id/toHomeFromCategories"
+                    android:layout_width="47dp"
+                    android:layout_marginTop="-60dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/ic_home" />
+
+
+                <TextView
+                    android:layout_width="275dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/gentium_book_basic"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="40dp"
+                    android:text="Products for"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000408"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/toWomen"
+                        android:layout_width="320dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#8103050F"
+                        android:text="Women"
+                        android:textSize="34sp"
+                        android:fontFamily="@font/gentium_book_basic"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        app:cornerRadius="8sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/toMen"
+                        android:layout_width="320dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#8103050F"
+                        android:fontFamily="@font/gentium_book_basic"
+                        android:text="Men"
+                        android:textAllCaps="false"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="8sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/toChildren"
+                        android:layout_margin="10dp"
+                        android:layout_width="320dp"
+                        android:layout_height="120dp"
+                        android:backgroundTint="#8103050F"
+                        app:cornerRadius="8sp"
+                        android:fontFamily="@font/gentium_book_basic"
+                        android:textAllCaps="false"
+                        android:text="Children"
+                        android:textStyle="bold"
+                        android:textSize="34sp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/gb__"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E000205"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/toHomeFromProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_home"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="20dp"
+                android:background="#000000"
+                android:fontFamily="serif"
+                android:text="My Profile"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/profile_before_recycle"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:text="My Previous Orders:"
+                android:textAlignment="center"
+                android:layout_marginTop="0dp"
+                android:background="#A6000000"
+                android:textColor="#F3F2F5"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profile_recycle"
+                android:background="#A6000000"
+                android:layout_below="@+id/profile_before_recycle"
+                android:layout_width="360dp"
+                android:layout_height="260dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:id="@+id/btnSettings"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_baseline_settings_24"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="24sp"
+                app:cornerRadius="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gentium_book_basic"
+                android:text="Settings"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:id="@+id/btnLogout"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_baseline_exit_to_app_24"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                app:cornerRadius="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gentium_book_basic"
+                android:textSize="24sp"
+                android:text="Logout"
+                tools:ignore="InvalidId" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@drawable/gb__"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E000205"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/toHFromSet"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_home"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="20dp"
+                android:background="#000000"
+                android:fontFamily="serif"
+                android:text="Profile Settings"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:background="#A6000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:id="@+id/settingsName"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="28sp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/settingsBtnName"
+                    android:backgroundTint="#43050400"
+                    android:drawableLeft="@drawable/ic_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:id="@+id/settingsEmail"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="28sp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/settingsBtnEmail"
+                    android:backgroundTint="#43050400"
+                    android:drawableLeft="@drawable/ic_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:id="@+id/settingsPhone"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="28sp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/settingsBtnPhone"
+                    android:backgroundTint="#43050400"
+                    android:drawableLeft="@drawable/ic_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="#F3F2F5"
+                    android:id="@+id/settingsPass"
+                    android:paddingLeft="20dp"
+                    android:textSize="28sp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/settingsBtnPass"
+                    android:backgroundTint="#43050400"
+                    android:drawableLeft="@drawable/ic_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/settingsAddress"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="28sp"/>
+
+                <Button
+                    android:layout_width="55dp"
+                    android:id="@+id/settingsBtnAddress"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#43050400"
+                    android:drawableLeft="@drawable/ic_edit"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/deleteAccount"
+            android:text="Delete Account?"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gb__"
+    tools:context=".ProductsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#D1060001"
+        android:id="@+id/zemSiN"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ED000406"
+            android:layout_height="140dp">
+
+            <TextView
+                android:id="@+id/toHomeFromProd"
+                android:layout_width="47dp"
+                android:layout_marginTop="-60dp"
+                android:layout_height="47dp"
+                android:background="@drawable/ic_home" />
+            <TextView
+                android:id="@+id/nosaukums"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:paddingTop="15dp"
+                android:background="#BC000406"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:text="Our Products"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_search"
+        android:layout_below="@+id/zemSiN"
+        android:background="#BC000406"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/user_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

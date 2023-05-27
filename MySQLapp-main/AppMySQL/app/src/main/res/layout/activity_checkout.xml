@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity"
+    android:background="@drawable/gb__"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E000205"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000">
+
+                <TextView
+                    android:id="@+id/toHomeFromCheckout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_home"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="20dp"
+                android:background="#000000"
+                android:fontFamily="serif"
+                android:text="Checkout"
+                android:gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:text="My Order:"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:background="#84FFFEEE"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#D5060001"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/checkout_txt_name"
+                android:text="Product No. 34, Product No. 28, Product No.120, Product No. 121; Product No. 2, Product No. 4"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/checkout_txt_price"
+                android:text="Total Price: 120 EUR"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="13dp"
+            android:background="#C9000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="24sp"/>
+
+                <EditText
+                    android:layout_width="210dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/changeName"
+                    android:backgroundTint="#43050400"
+                    android:textColor="#F3F2F5"
+                    android:text="Vards Uzvards"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="24sp"/>
+
+                <EditText
+                    android:layout_width="210dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/changeEmail"
+                    android:backgroundTint="#43050400"
+                    android:textColor="#F3F2F5"
+                    android:text="email@mail.com"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="24sp"/>
+
+                <EditText
+                    android:layout_width="210dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/changePhone"
+                    android:backgroundTint="#43050400"
+                    android:textColor="#F3F2F5"
+                    android:text="23452111"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textColor="#F3F2F5"
+                    android:paddingLeft="20dp"
+                    android:textSize="24sp"/>
+
+                <EditText
+                    android:id="@+id/changeAddress"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#43050400"
+                    android:hint="Address"
+                    android:text=""
+                    android:textColor="#F3F2F5"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:id="@+id/btnMakeOrder"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gentium_book_basic"
+            android:textSize="28sp"
+            android:text="Make this Order!"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

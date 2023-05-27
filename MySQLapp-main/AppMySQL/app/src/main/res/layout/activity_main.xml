@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59000406"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:paddingTop="60dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:textAlignment="center"
+                    android:layout_width="280dp"
+                    android:fontFamily="@font/gentium_book_basic"
+                    android:layout_height="match_parent"
+                    android:text="Online Store"
+                    android:textColor="@color/white"
+                    android:textSize="42sp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/mainToCart"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="-70dp"
+                    android:background="@drawable/ic_cart"
+                    android:foreground="#00F6F7F8"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mainToLogin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="-70dp"
+                    android:background="@drawable/ic_person"
+                    android:foreground="#0099D5F7"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/toMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_menu"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gb__"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#C4000000"
+                android:text="Who We Are?"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="24dp"
+                android:background="#6D000105"
+                android:textColor="#CFCFE6"
+                android:fontFamily="@font/gentium_book_basic"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Professional company who sells lot of ..."/>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:paddingLeft="20dp"
+
+                    >
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="0dp"
+                            android:paddingLeft="-130dp">
+
+                            <Button
+                                android:id="@+id/scrollVertical"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="#73000000"
+                                android:text="New Collection"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/gentium_book_basic"
+                                android:backgroundTint="#73000000"
+                                android:text="Our Products"
+                                android:id="@+id/mainToProducts"
+                                android:textSize="27sp" />
+
+                            <Button
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="#73000000"
+                                android:text="Special Offers"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </ScrollView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

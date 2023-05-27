@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gb__"
+    tools:context=".CartActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#D1060001"
+        android:id="@+id/zemSi"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ED000406"
+        android:layout_height="140dp">
+
+    <TextView
+        android:id="@+id/toHomeFromCart"
+        android:layout_width="47dp"
+        android:layout_marginTop="-60dp"
+        android:layout_height="47dp"
+        android:background="@drawable/ic_home" />
+    <TextView
+        android:id="@+id/myCart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:paddingLeft="-20dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:background="#C7000406"
+        android:textColor="#FFFFFF"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:text="My Cart"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productListInCart"
+        android:layout_below="@+id/zemSi"
+        android:background="#BC000406"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/total_id"
+        android:layout_below="@+id/productListInCart"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="Total: "/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@+id/total_id"
+        android:layout_width="360dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/btnMakeOrder"
+        android:fontFamily="@font/gentium_book_basic"
+        android:layout_height="60dp"
+        app:cornerRadius="10sp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:text="Make Purchase!"/>
+
+
+</RelativeLayout>
